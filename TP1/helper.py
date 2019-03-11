@@ -1,7 +1,7 @@
 from bitarray import bitarray
 import inspect
 
-debugMode = 0
+debugMode = 1
 
 # apply a given mask to  bitarry object
 def mask_permutation(plainText, mask ) :
