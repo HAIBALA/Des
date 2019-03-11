@@ -37,6 +37,7 @@ def IP_1(plainText) :
 
 
 
+
 # random word
 word= bitarray()
 for i in range(0, 64) :
