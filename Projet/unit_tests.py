@@ -1,7 +1,7 @@
 import  helper
 import fk_function as Fk_function
 from random import  randint
-
+import  key_generator
 from bitarray import  bitarray
 
 
@@ -38,4 +38,17 @@ def test_FK() :
 
 
 
-test_FK()
+def test_Key_Generation():
+    word = bitarray()
+    for i in range(0, 64):
+        word.append(randint(0, 1))
+
+    print key_generator.generate_keys(word,16)
+
+
+test_Key_Generation()
+
+
+
+
+
