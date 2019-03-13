@@ -17,6 +17,12 @@ key= bitarray()
 for i in range(0, 168) :
     key.append(randint(0, 1))
 
+def generateDESKey(size) :
+    key = bitarray()
+    for i in range(0, size):
+        key.append(randint(0, 1))
+    return  key
+
 
 nbRound=16
 
