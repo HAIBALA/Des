@@ -1,7 +1,7 @@
 from bitarray import bitarray
 import inspect
 
-debugMode = 1
+debugMode = 0
 
 # apply a given mask to  bitarry object
 def mask_permutation(plainText, mask ) :
@@ -37,5 +37,3 @@ list = [
         46, 42, 50, 36, 29, 32
 
     ]
-
-print decrement_list(list)
