@@ -46,9 +46,6 @@ def test_Key_Generation():
     print key_generator.generate_keys(word,16)
 
 
-test_Key_Generation()
-
-
 
 
 
