@@ -17,6 +17,12 @@ key= bitarray()
 for i in range(0, 168) :
     key.append(randint(0, 1))
 
+def generateDESKey(size) :
+    key = bitarray()
+    for i in range(0, size):
+        key.append(randint(0, 1))
+    return  key
+
 
 nbRound=16
 
@@ -62,9 +68,9 @@ def decryptage(plaintext,key):
     word=key_generator.IP1(word)
     return word
 
-
-crypt= cryptage168(word,key)
-decrypt= decryptage168(crypt,key)
+key =  generateDESKey(64)
+crypt= cryptage(word,key)
+decrypt= decryptage(crypt,key)
 
 print word
 print crypt

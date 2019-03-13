@@ -1,10 +1,10 @@
-import Crypto
-from Crypto.PublicKey import RSA
-from Crypto import Random
+import crypto
+import rsa
+from rsa import randnum
 import ast
 
-random_generator = Random.new().read
-key = RSA.generate(1024, random_generator) #generate pub and priv key
+random_generator = randnum.new().read
+key = rsa.generate(1024, random_generator) #generate pub and priv key
 
 publickey = key.publickey() # pub key export for exchange
 
