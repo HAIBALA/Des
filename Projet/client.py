@@ -30,5 +30,3 @@ try:
 except Exception as e:
     print logging.error(traceback.format_exc())
 
-
-

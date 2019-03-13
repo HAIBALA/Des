@@ -68,9 +68,9 @@ def decryptage(plaintext,key):
     word=key_generator.IP1(word)
     return word
 
-
-crypt= cryptage168(word,key)
-decrypt= decryptage168(crypt,key)
+key =  generateDESKey(64)
+crypt= cryptage(word,key)
+decrypt= decryptage(crypt,key)
 
 print word
 print crypt
