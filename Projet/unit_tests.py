@@ -25,6 +25,7 @@ def test__sbox() :
     print expension_permuattion
     sboxResult = Fk_function.sbox(expension_permuattion)
     print sboxResult
+
 def test_FK() :
     word = bitarray()
     for i in range(0, 64):
